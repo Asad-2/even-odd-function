@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even and odd function</title>
+</head>
+<body>
+    <h1> Even And Odd</h1>
+    <form onsubmit="doSum(); return false">
+        <br>
+        <br>
+        num1:<input type="number" placeholder="Enter a number" id="num1">
+        <br>
+        <br>
+        <button class ="button" type="submit">Submit</button>
+     </form>
+     <h3 id="result"> </h3>
+    
+    <script>
+         function doSum() 
+         {
+            let firstNumber = +document.querySelector("#num1").value
+            let resultElement = document.querySelector("#result")
+
+            if ((firstNumber % 2) === 1){
+                resultElement.innerHTML = "its odd Number"
+            }
+            else {
+                resultElement.innerHTML ="Its an even Number"
+            }
+
+        
+         }
+
+
+
+    </script>
+</body>
+</html>
